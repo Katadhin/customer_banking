@@ -9,18 +9,68 @@
 # after a specified number of months.
 
 # Create Accounts.py file
+import Account
+
 # Create a class called Account
-# Create a constructor method that takes in balance and interest
-# Create a set balance method that takes in balance and sets the balance
-# Create a set interest method that takes in interest and sets the interest
-# Create a get balance method that returns the balance
-# Create a get interest method that returns the interest
+class Account:
+    # Create a constructor method that takes in balance and interest
+    def __init__(self, balance, interest):
+        self.balance = balance
+        self.interest = interest
+
+    # Create a set balance method that takes in balance and sets the balance
+    def set_balance(self, balance):
+        self.balance = balance
+
+    # Create a set interest method that takes in interest and sets the interest
+    def set_interest(self, interest):
+        self.interest = interest
+
+    # Create a get balance method that returns the balance
+    def get_balance(self):
+        return self.balance
+
+    # Create a get interest method that returns the interest
+    def get_interest(self):
+        return self.interest
 
 # Create a Menu
-# Create a function that displays the menu
+def menu():
+    print()
+    print("Welcome to the First United Bank of Python")
+    print()
+    print("1. Create a Savings Account")
+    print("2. Create a CD Account")
+    print("3. Exit")
+    print()
+    
+    user_choice = input("Enter your choice: ")  # Add variable declaration for user_choice
+    
+    return user_choice
+
+menu()
+
+if user_choice == 1:
+
+    print()
+
+
+
 
 
 # Populate Account with information
+# Create a Savings Account
+# Create a CD Account
+# Create a function to calculate interest
+# Create a function to update balance
+# Create a function to update interest
+# Create a function to update time
+# Create a function to update balance
+# Create a function to update interest
+# Create a function to update time
+
+
+
 
 # Create Financial Methods
 # Interest Rate, Time, Beginning/Ending Calance
